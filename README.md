@@ -14,6 +14,11 @@ py -m pip install pyautogui
 ## Settings
 This script should work only with full HD resolution (1920x1080).
 Hud size in game needs to be set to 'Normal'.
+Also you need to have game on your primary screen.
 
-## How to just use script
-TBC...
+## How to use script
+To turn on just press 'O'.
+Same to turn off.
+When script is running you just need to point on enemy.
+Then your character should start attacking it.
+If you are playing as a ranged character I recommend holding 'shift', because your character, instead of atttacking, may go to place which you are pointing.
