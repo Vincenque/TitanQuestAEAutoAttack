@@ -11,5 +11,9 @@ py -m pip install pyautogui
 ```
 4. Open 'TitanQuestAEAutoAttack.py' with 'Idle (Python 3.11 64-bit)'.
 
+## Settings
+This script should work only with full HD resolution (1920x1080).
+Hud size in game needs to be set to 'Normal'.
+
 ## How to just use script
 TBC...
