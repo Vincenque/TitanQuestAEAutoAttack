@@ -8,6 +8,7 @@ If you want to edit script you need to:
 py -m ensurepip 
 py -m pip install --upgrade pip 
 py -m pip install pyautogui 
+py -m pip install customtkinter
 ```
 4. Open 'TitanQuestAEAutoAttack.py' with 'Idle (Python 3.11 64-bit)'.
 
