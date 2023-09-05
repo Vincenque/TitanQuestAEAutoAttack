@@ -20,9 +20,7 @@ class MyApp(threading.Thread):
         while True:
             keyState = win32api.GetKeyState(79) #79 = O
             if keyState == 1:
-                print("Script on")
             elif keyState != 1 and scriptOffMesseagePrinted == False:
-                print("Script off")
                 scriptOnOffLabel.configure(text = "Script is off", text_color = "red")
                 scriptOffMesseagePrinted = True
             while keyState == 1:
@@ -35,20 +33,17 @@ class MyApp(threading.Thread):
                     hpBarOnScreen = False
                 #print(pyautogui.pixel(905,65))
                 if hpBarOnScreen == True and fightType.get() == "Ranged":
-                    print("Ranged")
                     pydirectinput.keyDown('shift')
                     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
                     time.sleep(0.01)
                     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
                     pydirectinput.keyUp('shift')
                 elif hpBarOnScreen == True and fightType.get() == "Melee":
-                    print("Melee")
                     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
                     time.sleep(0.01)
                     win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
                     
 scriptOffMesseagePrinted = True
-print("Press 'O' to turn script on") 
 app = MyApp()
 app.start()
 
