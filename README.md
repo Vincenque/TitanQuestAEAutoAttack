@@ -9,6 +9,7 @@ py -m ensurepip
 py -m pip install --upgrade pip 
 py -m pip install pyautogui 
 py -m pip install customtkinter
+py -m pip install pydirectinput
 ```
 4. Open 'TitanQuestAEAutoAttack.py' with 'Idle (Python 3.11 64-bit)'.
 
