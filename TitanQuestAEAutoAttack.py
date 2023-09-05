@@ -19,8 +19,7 @@ class MyApp(threading.Thread):
         global scriptOffMesseagePrinted
         while True:
             keyState = win32api.GetKeyState(79) #79 = O
-            if keyState == 1:
-            elif keyState != 1 and scriptOffMesseagePrinted == False:
+            if keyState != 1 and scriptOffMesseagePrinted == False:
                 scriptOnOffLabel.configure(text = "Script is off", text_color = "red")
                 scriptOffMesseagePrinted = True
             while keyState == 1:
